@@ -82,6 +82,23 @@ namespace Arrar2
              Console.WriteLine("Max Values : "+max);
               Console.WriteLine("min Values : "+min);
         }
+
+         public static void JaggedArray()
+         {
+             int[][] arry = new int[3][] {
+                  new int[] { 1 ,2 ,3 ,4 ,5 },
+                  new int[] { 0 , 3 },
+                  new int[] { 2 , 3 , 4 , 5 , 6 ,7 }
+             };
+             for(int i=0; i < arry.Length;i++)
+             {
+                 for(int j=0; j < arry[i].Length;j++)
+                 {
+                     Console.Write(arry[i][j]+" , ");
+                 }
+                 Console.WriteLine();
+             }
+         }
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
@@ -94,6 +111,7 @@ namespace Arrar2
             twoDimensionnxt();
             threeDimensionnxt();
             minmaxMethod();
+            JaggedArray();
         }
     }
 }
